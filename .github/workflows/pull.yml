@@ -3,7 +3,7 @@ name: auto pull
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 * * * *'
+    - cron: '0 20-22 */7 * *' # Every minute, between 20:00 and 22:59, every 7 days
 
 jobs:
   check-update:
