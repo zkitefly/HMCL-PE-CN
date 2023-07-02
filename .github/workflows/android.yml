@@ -46,3 +46,5 @@ jobs:
         files: |
           HMCLPE/build/outputs/apk/release/*
         target_commitish: ${{ env.TIME }}
+        name: ${{ env.TIME }}
+        tag_name: ${{ env.TIME }}
