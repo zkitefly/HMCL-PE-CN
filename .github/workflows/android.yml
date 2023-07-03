@@ -36,7 +36,7 @@ jobs:
     - name : get time and generate release note
       run: |
         sudo timedatectl set-timezone 'Asia/Shanghai'
-        export TIME="`date '+%Y-%m-%d+_%H-%M-%S'`"
+        export TIME="`date '+%Y-%m-%d_%H-%M-%S'`"
         echo "TIME=$TIME" >> $GITHUB_ENV
         echo "这个是 ${{ env.TIME }} 的最新 apk ，由 github action 构建，无需担心病毒问题" >> RELEASE_NOTE
 
