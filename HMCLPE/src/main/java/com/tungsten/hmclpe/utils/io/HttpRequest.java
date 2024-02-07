@@ -115,7 +115,7 @@ public abstract class HttpRequest {
         public String getString() throws IOException {
             HttpURLConnection con = createConnection();
             con = resolveConnection(con);
-            return IOUtils.readFullyAsString(con.getInputStream(), StandardCharsets.UTF_8);
+            return IOUtils.readFullyAsString("gzip".equals(con.getContentEncoding()) ? IOUtils.wrapFromGZip(con.getInputStream()) : con.getInputStream());
         }
     }
 

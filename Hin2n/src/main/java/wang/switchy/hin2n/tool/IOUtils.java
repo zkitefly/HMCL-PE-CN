@@ -2,6 +2,7 @@ package wang.switchy.hin2n.tool;
 
 
 import java.io.*;
+import java.util.zip.GZIPInputStream;
 
 public class IOUtils {
 
@@ -92,5 +93,9 @@ public class IOUtils {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static InputStream wrapFromGZip(InputStream inputStream) throws IOException {
+        return new GZIPInputStream(inputStream);
     }
 }
