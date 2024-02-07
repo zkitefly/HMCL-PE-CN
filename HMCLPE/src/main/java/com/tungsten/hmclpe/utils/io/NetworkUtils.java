@@ -4,6 +4,7 @@ import static com.tungsten.hmclpe.utils.Pair.pair;
 import static com.tungsten.hmclpe.utils.string.StringUtils.removeSurrounding;
 import static com.tungsten.hmclpe.utils.string.StringUtils.substringAfter;
 import static com.tungsten.hmclpe.utils.string.StringUtils.substringAfterLast;
+import com.tungsten.hmclpe.utils.io.IOUtils;
 
 import java.io.*;
 import java.net.*;
