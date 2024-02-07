@@ -1,5 +1,6 @@
 package wang.switchy.hin2n.tool;
 
+import com.tungsten.hmclpe.utils.io.IOUtils;
 
 import java.io.*;
 import java.util.zip.GZIPInputStream;
